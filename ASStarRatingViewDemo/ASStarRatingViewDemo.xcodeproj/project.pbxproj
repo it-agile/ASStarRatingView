@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26079B4A16B1994B007B3F56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26079B4916B1994B007B3F56 /* Default-568h@2x.png */; };
 		A949CF4814C407DA003465E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A949CF4714C407DA003465E0 /* UIKit.framework */; };
 		A949CF4A14C407DA003465E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A949CF4914C407DA003465E0 /* Foundation.framework */; };
 		A949CF4C14C407DA003465E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A949CF4B14C407DA003465E0 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26079B4916B1994B007B3F56 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		A949CF4314C407DA003465E0 /* ASStarRatingViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASStarRatingViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A949CF4714C407DA003465E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A949CF4914C407DA003465E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,7 @@
 		A949CF4E14C407DA003465E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26079B4916B1994B007B3F56 /* Default-568h@2x.png */,
 				A949CF4F14C407DA003465E0 /* ASStarRatingViewDemo-Info.plist */,
 				A949CF5014C407DA003465E0 /* InfoPlist.strings */,
 				A949CF5314C407DA003465E0 /* main.m */,
@@ -163,7 +166,7 @@
 		A949CF3A14C407DA003465E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = A949CF3D14C407DA003465E0 /* Build configuration list for PBXProject "ASStarRatingViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,6 +198,7 @@
 				A949CF7914C4098E003465E0 /* not_selected_star@2x.png in Resources */,
 				A949CF7A14C4098E003465E0 /* selected_star.png in Resources */,
 				A949CF7B14C4098E003465E0 /* selected_star@2x.png in Resources */,
+				26079B4A16B1994B007B3F56 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -252,6 +260,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -264,12 +273,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -282,6 +296,7 @@
 		A949CF6514C407DB003465E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASStarRatingViewDemo/ASStarRatingViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "ASStarRatingViewDemo/ASStarRatingViewDemo-Info.plist";
@@ -294,6 +309,7 @@
 		A949CF6614C407DB003465E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASStarRatingViewDemo/ASStarRatingViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "ASStarRatingViewDemo/ASStarRatingViewDemo-Info.plist";

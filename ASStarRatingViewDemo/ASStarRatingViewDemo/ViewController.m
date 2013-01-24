@@ -67,8 +67,4 @@
     }
 }
 
-- (void)dealloc {
-    [staticStarRatingView release];
-    [super dealloc];
-}
 @end

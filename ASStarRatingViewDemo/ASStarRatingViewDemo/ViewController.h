@@ -10,6 +10,6 @@
 @class ASStarRatingView;
 
 @interface ViewController : UIViewController
-@property (retain, nonatomic) IBOutlet ASStarRatingView *staticStarRatingView;
+@property (strong, nonatomic) IBOutlet ASStarRatingView *staticStarRatingView;
 
 @end
